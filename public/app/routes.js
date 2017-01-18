@@ -6,10 +6,12 @@ angular.module('appRoutes', ['ngRoute'])
             templateUrl: 'app/views/templates/home.html'
         })
         .when('/signin',  {
-            templateUrl:  'app/views/templates/signin.html'
+            templateUrl:  'app/views/templates/users/signin.html'
         })
         .when('/signup',  {
-            templateUrl:  'app/views/templates/signup.html'
+            templateUrl:  'app/views/templates/users/signup.html',
+            controller:   'regCtrl',
+            controllerAs: 'register'
         })
         .when('/shop', {
             templateUrl: 'app/views/templates/shop.html'
