@@ -1,0 +1,8 @@
+div.c-wrapper{
+    width: 80%; /* for example */
+    margin: auto;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
