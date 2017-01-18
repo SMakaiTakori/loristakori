@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
     <base href="/">
     <meta charset="UTF-8">
@@ -21,10 +21,12 @@
     <!-- Custom angular app -->
     <script src="app/app.js"></script>
     <script src="app/routes.js"></script>
+    <script src="app/controllers/userCtrls.js"></script>
 
 </head>
-<body ng-app="myApp">
-<header>
+<body>
+<!-- Navigation Bar -->
+<header class="custom-header">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,7 +44,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/signup">Sign Up<span class="sr-only">(current)</span></a></li>
+                    <li><a href="/signup">Sign Up<span class="sr-only">(current)</span></a></li>
                     <li><a href="/signin">Sign In</a></li>
                     <li><a href="/shop">Shop</a></li>
                     <li class="dropdown">
@@ -63,17 +65,19 @@
         </div><!-- /.container-fluid -->
     </nav>
 </header>
+
 <div class="container">
-<h1 class="page-header">Hey beautiful have a great day and have fun coding!!! ~Perry~</h1>
+    <!--<h1 class="page-header">Hey beautiful have a great day and have fun coding!!! ~Perry~</h1>-->
 </div>
- <!--Do not code below this line-->
+<!--Do not code below this line-->
 
 <main ng-view=""></main>
 
-<footer>
-
+<footer class="footer">
+    <div class="container text-center">
+        <h4>Check me out on my other social media sites as well.</h4>
+    </div>
 </footer>
-
 
 <script src="assets/js/jquery-3.1.1.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>
