@@ -26,51 +26,27 @@
 
 </head>
 
-<body>
-<!-- Navigation Bar -->
-<header class="custom-header">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Löris Takori</a>
-            </div>
-
+<!-- Angular program -->
 <body ng-app="myApp">
 
+<!-- Header -->
 <div id="header">
-    <div ng-include=" 'app/views/header.html' " ></div>
+    <div ng-include=" 'app/views/header.html' "></div>
 </div>
 
-<!--Do not code below this line-->
-
+<!-- Angular Views -->
 <main ng-view=""></main>
 
-
-<footer class="footer">
-    <div class="container text-center">
-        <h4>Check me out on my other social media sites as well.</h4>
-        <ul class="group">
-            <li><a href="https://www.facebook.com/"</a><img src="images/facebook.svg" alt="Facebook"/></li>
-            <li><img src="documents/GitHub/sandbox/assets/images/instagram.svg" alt="Instagram"/></li>
-            <li><img src="documents/GitHub/sandbox/assets/images/twitter.svg" alt="Twitter"/></li>
-            <li><img src="documents/GitHub/sandbox/assets/images/linkedin.svg" alt="LinkedIn"/></li>
-        </ul>
-    </div>
-</footer>
-
+<!-- Footer -->
 <div id="footer">
-    <div ng-include=" 'app/views/footer.html' " ></div>
+    <div ng-include=" 'app/views/footer.html' "></div>
 </div>
 
+<!-- JQuery files -->
 <script src="assets/js/jquery-3.1.1.min.js"></script>
+
+<!-- Bootstrap Javascript -->
 <script src="assets/js/bootstrap.js"></script>
+
 </body>
 </html>

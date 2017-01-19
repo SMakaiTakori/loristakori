@@ -1,28 +1,28 @@
-var express     = require('express');
-var app         = express();
-var port        = process.env.PORT || 3000;
-var mongoose    = require('mongoose');
-var morgan      = require('morgan');
-var bodyParser  = require('body-parser');
-var router      = express.Router();
-var appRoutes   = require('./app/routes/api')(router);
-var path        = require('path');
+var express     = require('express');                                               // Getting express routing from node_modules
+var app         = express();                                                        // Renaming express to app
+var port        = process.env.PORT || 3000;                                         // Setting up port
+var mongoose    = require('mongoose');                                              // Connecting to Mongo DB using mongoose
+var morgan      = require('morgan');                                                // Getting Morgan to tell express to log events
+var bodyParser  = require('body-parser');                                           // Using body pareser to take in json and be able to parser it into usable objects
+var router      = express.Router();                                                 // Using express router for exporting modules and routing
+var appRoutes   = require('./app/routes/api')(router);                              // Custom file for user signup informatiomn
+var path        = require('path');                                                  // Using path to link certain file folders to the server file
 
 ///// Set up Morgan middleware /////
-app.use(morgan('dev'));
+app.use(morgan('dev'));                                                             // Using morgan even logger
 
 ///// Set up body parser middleware /////
-app.use(bodyParser.json());                                                          // for parsing application/json
-app.use(bodyParser.urlencoded({ extended: true }));                                  // for parsing application/x-www-form-urlencoded
+app.use(bodyParser.json());                                                         // For parsing application/json
+app.use(bodyParser.urlencoded({ extended: true }));                                 // For parsing application/x-www-form-urlencoded
 
 ///// Express static route /////
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));                                     // Setting up static route to the public folder for app access
 
 ///// https://localhost:3000/api/newuser
-app.use('/api', appRoutes);
+app.use('/api', appRoutes);                                                         // Telling the server were to route for creating a new user
 
 ///// Configure Mongo database /////
-mongoose.connect('mongodb://localhost:27017/loris_site', function (err) {
+mongoose.connect('mongodb://localhost:27017/loris_site', function (err) {           // Connecting to mongo DB and naming the database
     if (err) {
         console.log('Cannot connect to Mongo database at this time ' + err);
     } else {
@@ -31,11 +31,11 @@ mongoose.connect('mongodb://localhost:27017/loris_site', function (err) {
 });
 
 ///// Static index page /////
-app.get('*', function (req, res) {
+app.get('*', function (req, res) {                                                  // Setting a static route to the public folder for access to the user
     res.sendFile((path.join(__dirname + '/public/app/views/index.html')));
 });
 
 ///// Listening for server connection on port 3000 /////
-app.listen(port, function () {
+app.listen(port, function () {                                                      // Listening to the port so that the server wont close down after connection
     console.log('Connected to Node server on port: ' + port + '!');
 });
