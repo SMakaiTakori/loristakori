@@ -1,28 +1,27 @@
+<div id= "all-black-background">
 <div class="container">
     <div class="page-header text-center">
-        <h1>New User Sign Up</h1>
+        <h1>Sign Up</h1>
     </div>
 </div>
 <div class="signup_backround_color">
-    <div class="container">
-        <form action="">
-            <label>First Name:</label>
-            <input type="text" placeholder="First Name" class="form-control input-sm">
+            <form class="container" ng-submit="register.regUser(regData)">
+            <label>First Name</label>
+            <input type="text" class="form-control input-sm" ng-model="register.regData.firstName">
             <br>
-            <label>Last Name:</label>
-            <input type="text" placeholder="Last Name" class="form-control input-sm">
+            <label>Last Name</label>
+            <input type="text" class="form-control input-sm" ng-model="register.regData.lastName">
             <br>
-            <label>Username:</label>
-            <input type="text" placeholder="Username" class="form-control input-sm">
+            <label>Username</label>
+            <input type="text" class="form-control input-sm" ng-model="register.regData.username">
             <br>
             <label>E-mail:</label>
-            <input type="text" placeholder="JohnDoe@LorisK.com" class="form-control input-sm">
+            <input type="text" class="form-control input-sm" ng-model="register.regData.email">
             <br>
             <label>Password:</label>
-            <input type="text" placeholder="Password" class="form-control input-sm">
+            <input type="text" class="form-control input-sm" ng-model="register.regData.password">
             <br>
             <input type="submit" class="btm btn-primary btn-lg pull-right">
-
         </form>
     </div>
 </div>
