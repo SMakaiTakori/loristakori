@@ -1,11 +1,10 @@
 <div id= "all-black-background">
-<div class="container">
-    <div class="page-header text-center">
+  <div class="container">
+      <div class="page-header text-center">
         <h1>Sign Up</h1>
     </div>
-</div>
-<div class="signup_backround_color">
-            <form class="container" ng-submit="register.regUser(regData)">
+  </div>
+         <form class="container" ng-submit="register.regUser(regData)">
             <label>First Name</label>
             <input type="text" class="form-control input-sm" ng-model="register.regData.firstName">
             <br>
@@ -21,7 +20,6 @@
             <label>Password:</label>
             <input type="text" class="form-control input-sm" ng-model="register.regData.password">
             <br>
-            <input type="submit" class="btm btn-primary btn-lg pull-right">
-        </form>
-    </div>
-</div>
+            <button class="btn btn-primary" type="submit">Register</button>
+         </form>
+  </div>
