@@ -1,8 +1,35 @@
-div.c-wrapper{
+div.c-wrapper {
     width: 80%; /* for example */
     margin: auto;
 }
 
 .carousel-inner > .item > img {
     margin: 0 auto;
+}
+
+.show-hide-message.ng-hide-remove {
+    -webkit-animation: zoomIn 0.3s both ease;
+    -moz-animation: zoomIn 0.3s both ease;
+    animation: .3s both ease;
+}
+
+.spinner {
+    -webkit-animation: spin 1s infinite;
+    -moz-animation: spin 1s infinite;
+    animation: sping 1s infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg) }
+    to   { transform: rotate(360deg)}
+}
+
+@-webkit-keyframes spin {
+    from { transform: rotate(0deg)}
+    to   { transform: rotate(360deg) }
+}
+
+@-moz-keyframes sping {
+    from { transform: rotate(0deg)}
+    to   { transform: rotate(360deg)}
 }
