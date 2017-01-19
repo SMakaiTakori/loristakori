@@ -3,8 +3,7 @@
         <h1>New User Sign Up</h1>
     </div>
 </div>
-        <form action="" ng-submit="register.regUser(regData)">                                                                      <!-- ng-submit is needed on this form tag or the div that will wrap all the inputs and the button -->
-    <div class="container">
+        <form class="container" ng-submit="register.regUser(regData)">                                                                      <!-- ng-submit is needed on this form tag or the div that will wrap all the inputs and the button -->
             <label>First Name:</label>
             <input type="text" placeholder="First Name" class="form-control input-sm" ng-model="register.regData.firstName">        <!-- the ng-model is needed just as it is on all input fields -->
             <br>
@@ -21,7 +20,6 @@
             <input type="text" placeholder="Password" class="form-control input-sm" ng-model="register.regData.password">
             <br>
             <button class="btn btn-primary" type="submit">Register</button>
-    </div>
         </form>
 <br>
 <br>
