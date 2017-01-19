@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en">
 <head>
     <base href="/">
     <meta charset="UTF-8">
@@ -24,60 +24,19 @@
     <script src="app/controllers/userCtrls.js"></script>
 
 </head>
-<body>
-<!-- Navigation Bar -->
-<header class="custom-header">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Loris Takori</a>
-            </div>
+<body ng-app="myApp">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="/signup">Sign Up<span class="sr-only">(current)</span></a></li>
-                    <li><a href="/signin">Sign In</a></li>
-                    <li><a href="/shop">Shop</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Are</a></li>
-                            <li><a href="#">You</a></li>
-                            <li><a href="#">Having</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Fun</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">YET?</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-</header>
-
-<div class="container">
-    <!--<h1 class="page-header">Hey beautiful have a great day and have fun coding!!! ~Perry~</h1>-->
+<div id="header">
+    <div ng-include=" 'app/views/header.html' " ></div>
 </div>
+
 <!--Do not code below this line-->
 
 <main ng-view=""></main>
 
-<footer class="footer">
-    <div class="container text-center">
-        <h4>Check me out on my other social media sites as well.</h4>
-    </div>
-</footer>
+<div id="footer">
+    <div ng-include=" 'app/views/footer.html' " ></div>
+</div>
 
 <script src="assets/js/jquery-3.1.1.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>

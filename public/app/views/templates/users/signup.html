@@ -3,9 +3,8 @@
         <h1>New User Sign Up</h1>
     </div>
 </div>
-<div class="signup_backround_color">
-    <div class="container">
         <form action="" ng-submit="register.regUser(regData)">                                                                      <!-- ng-submit is needed on this form tag or the div that will wrap all the inputs and the button -->
+    <div class="container">
             <label>First Name:</label>
             <input type="text" placeholder="First Name" class="form-control input-sm" ng-model="register.regData.firstName">        <!-- the ng-model is needed just as it is on all input fields -->
             <br>
@@ -21,10 +20,9 @@
             <label>Password:</label>
             <input type="text" placeholder="Password" class="form-control input-sm" ng-model="register.regData.password">
             <br>
-            <input type="submit" class="btm btn-primary btn-lg pull-right">
-        </form>
+            <button class="btn btn-primary" type="submit">Register</button>
     </div>
-</div>
+        </form>
 <br>
 <br>
 <br>
