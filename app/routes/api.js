@@ -12,13 +12,13 @@ module.exports     = function (router) {
         req.body.email     == null || req.body.email     == '' ||
         req.body.username  == null || req.body.username  == '' ||
         req.body.password  == null || req.body.password  == '') {
-        res.send('Ensure all fields marked with an asterisk were filled out')
+        res.json({ success: false, message: "Ensure all fields marked with an asterisk were filled out" })
     } else {
         user.save(function (err) {
             if (err) {
-                res.send('Username or E-mail already exist!');
+                res.json({ success: false, message: 'Username or E-mail already exist!' });
             } else {
-                res.send('user created');
+                res.json({ success: true, message: 'User created' });
             }
         });
     }

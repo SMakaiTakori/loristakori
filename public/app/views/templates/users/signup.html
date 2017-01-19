@@ -1,9 +1,8 @@
-<div id= "all-black-background">
   <div class="container">
       <div class="page-header text-center">
         <h1>Sign Up</h1>
     </div>
-  </div>
+</div>
          <form class="container" ng-submit="register.regUser(regData)">
             <label>First Name</label>
             <input type="text" class="form-control input-sm" ng-model="register.regData.firstName">
@@ -21,5 +20,24 @@
             <input type="text" class="form-control input-sm" ng-model="register.regData.password">
             <br>
             <button class="btn btn-primary" type="submit">Register</button>
-         </form>
-  </div>
+        </form>
+<br>
+<br>
+<br>
+<br>
+<div class="jumbotron text-center" ng-show="register.loading">
+    <span glyphicon glyphicon-repeat spinner></span>
+    <p>Loading...</p>
+</div>
+
+<div class="row show-hide-message" ng-show="register.successMessage">
+    <div class="alert alert-success"> {{ register.successMessage }} </div>
+</div>
+
+<br>
+
+<div class="row show-hide-message" ng-show="register.errorMessage">
+    <div class="alert alert-danger">{{ register.errorMessage }}</div>
+</div>
+<p class="text-center">If you already have an account please login <a href="/login">here</a>.</p>
+
