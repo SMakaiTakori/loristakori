@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Loris Portfolio</title>
+    <title>Löris Portfolio</title>
 
     <!-- Link Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -24,6 +24,24 @@
     <script src="app/controllers/userCtrls.js"></script>
 
 </head>
+
+<body>
+<!-- Navigation Bar -->
+<header class="custom-header">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Löris Takori</a>
+            </div>
+
 <body ng-app="myApp">
 
 <div id="header">
@@ -33,6 +51,19 @@
 <!--Do not code below this line-->
 
 <main ng-view=""></main>
+
+
+<footer class="footer">
+    <div class="container text-center">
+        <h4>Check me out on my other social media sites as well.</h4>
+        <ul class="group">
+            <li><a href="https://www.facebook.com/"</a><img src="images/facebook.svg" alt="Facebook"/></li>
+            <li><img src="documents/GitHub/sandbox/assets/images/instagram.svg" alt="Instagram"/></li>
+            <li><img src="documents/GitHub/sandbox/assets/images/twitter.svg" alt="Twitter"/></li>
+            <li><img src="documents/GitHub/sandbox/assets/images/linkedin.svg" alt="LinkedIn"/></li>
+        </ul>
+    </div>
+</footer>
 
 <div id="footer">
     <div ng-include=" 'app/views/footer.html' " ></div>

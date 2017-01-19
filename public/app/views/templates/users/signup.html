@@ -1,30 +1,25 @@
-<div class="container">
-    <div class="page-header text-center">
-        <h1>New User Sign Up</h1>
+<div id= "all-black-background">
+  <div class="container">
+      <div class="page-header text-center">
+        <h1>Sign Up</h1>
     </div>
-</div>
-        <form action="" ng-submit="register.regUser(regData)">                                                                      <!-- ng-submit is needed on this form tag or the div that will wrap all the inputs and the button -->
-    <div class="container">
-            <label>First Name:</label>
-            <input type="text" placeholder="First Name" class="form-control input-sm" ng-model="register.regData.firstName">        <!-- the ng-model is needed just as it is on all input fields -->
+  </div>
+         <form class="container" ng-submit="register.regUser(regData)">
+            <label>First Name</label>
+            <input type="text" class="form-control input-sm" ng-model="register.regData.firstName">
             <br>
-            <label>Last Name:</label>
-            <input type="text" placeholder="Last Name" class="form-control input-sm" ng-model="register.regData.lastName">          <!-- take note that all the ng-models are not the same each one ends in the property that it occupies -->
+            <label>Last Name</label>
+            <input type="text" class="form-control input-sm" ng-model="register.regData.lastName">
             <br>
-            <label>Username:</label>
-            <input type="text" placeholder="Usernanme" class="form-control input-sm" ng-model="register.regData.username">
+            <label>Username</label>
+            <input type="text" class="form-control input-sm" ng-model="register.regData.username">
             <br>
             <label>E-mail:</label>
-            <input type="text" placeholder="JohnDoe@LorisK.com" class="form-control input-sm" ng-model="register.regData.email">
+            <input type="text" class="form-control input-sm" ng-model="register.regData.email">
             <br>
             <label>Password:</label>
-            <input type="text" placeholder="Password" class="form-control input-sm" ng-model="register.regData.password">
+            <input type="text" class="form-control input-sm" ng-model="register.regData.password">
             <br>
             <button class="btn btn-primary" type="submit">Register</button>
-    </div>
-        </form>
-<br>
-<br>
-<br>
-<br>
-<p class="text-center">If you already have an account please login <a href="/login">here</a>.</p>
+         </form>
+  </div>
