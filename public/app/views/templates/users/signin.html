@@ -7,15 +7,16 @@
 
 <div class="signup_backround_color">
     <div class="container">
-        <form action="">
-            <label>Username:</label>
-            <input type="text" placeholder="Usernanme" class="form-control input-sm">
+        <form class="container" ng-submit="register.regUser(regData)">
+            <label>E-mail:</label>
+            <input type="text" class="form-control input-sm" ng-model="register.regData.email">
             <br>
             <label>Password:</label>
-            <input type="text" placeholder="Password" class="form-control input-sm">
+            <input type="text" class="form-control input-sm" ng-model="register.regData.password">
             <br>
-            <input type="submit" class="btm btn-primary btn-lg pull-right">
+            <button class="btn btn-primary" type="submit">Sign In</button>
         </form>
+        <br>
     </div>
 </div>
 
