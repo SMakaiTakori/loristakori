@@ -23,15 +23,21 @@
     <!-- Custom angular app -->
     <script src="app/app.js"></script>
     <script src="app/routes.js"></script>
+
+    <!-- Angular Controllers -->
     <script src="app/controllers/userCtrls.js"></script>
+    <script src="app/controllers/mainCtrl.js"></script>
+
+    <!-- Angular Services -->
     <script src="app/services/userServices.js"></script>
+    <script src="app/services/authServices.js"></script>
 
     <title>Löris Portfolio</title>
 
 </head>
 
 <!-- Angular program -->
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="mainCtrl as main">
 
 <!-- Header -->
 <div id="header">
