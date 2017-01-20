@@ -5,7 +5,7 @@ This is a portfolio website for Löris Takori with backend fucntionality done by
 Who is Löris Takori
 
 * Went to college and graduated
-* Do basic calculations of tax due based on their tax bracket and sales.
+* Just saying some stuff until this is filled out more
 * Submit the PDF & provide documentation of sales.
 * Write a check for the calculated amount.
 * Snail mail both the printed PDF and check to their commissioner's office before the due date or be penalized.
@@ -20,6 +20,5 @@ Who is Löris Takori
 
 ### Frameworks & APIs
 * MEAN Stack
-    * Passport
-* Bootstrap 4
-* Stripe API
+* Passport
+* Bootstrap 3
