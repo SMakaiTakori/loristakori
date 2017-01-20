@@ -7,16 +7,33 @@
 
 <div class="signup_backround_color">
     <div class="container">
-        <form class="container" ng-submit="register.regUser(regData)">
-            <label>E-mail:</label>
-            <input type="text" class="form-control input-sm" ng-model="register.regData.email">
+        <form class="container" ng-submit="main.doLogin(loginData)">
+            <label>Username:</label>
+            <input type="text" class="form-control input-sm" ng-model="main.loginData.username">
             <br>
             <label>Password:</label>
-            <input type="text" class="form-control input-sm" ng-model="register.regData.password">
+            <input type="text" class="form-control input-sm" ng-model="main.loginData.password">
             <br>
             <button class="btn btn-primary" type="submit">Sign In</button>
         </form>
         <br>
     </div>
 </div>
+<br>
+<br>
+<br>
+<br>
+<div class="jumbotron text-center" ng-show="main.loading">
+    <span glyphicon glyphicon-repeat spinner></span>
+    <p>Loading...</p>
+</div>
 
+<div class="row show-hide-message" ng-show="main.successMessage">
+    <div class="alert alert-success"> {{ main.successMessage }} </div>
+</div>
+
+<br>
+
+<div class="row show-hide-message" ng-show="main.errorMessage">
+    <div class="alert alert-danger">{{ main.errorMessage }}</div>
+</div>

@@ -35,5 +35,23 @@ div.c-wrapper {
 }
 
 ul {
-    list-style-type: none
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: Black;
+    text-align: center;
+    padding: 2rem;
+    text-decoration: none;
+}
+.footer {
+    background-color: #f1f1f1;
 }
