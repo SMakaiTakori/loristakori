@@ -13,7 +13,7 @@ angular.module('mainController', ['authServices'])
                     app.successMessage = data.data.message + '...redirecting';
                     $timeout(function () {
                         $location.path('/shop');
-                    }, 1500)
+                    }, 2000 )
                 } else {
                     //create error message
                     app.loading = false;
