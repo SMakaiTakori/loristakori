@@ -1,10 +1,10 @@
-# Loris
-Excise is a web app to assist restaurant and bars owners in paying their monthly liquor sales tax.
+# Löris Takori
+This is a portfolio website for Löris Takori with backend fucntionality done by Perry Craft and front-end deisgn by Makai Takori
 
-### Current Process
-On a monthly basis, owners have to do the following:
+### Sniipet about Löris Takori
+Who is Löris Takori
 
-* Find and print the Excise Tax Form PDF provided through their county government.
+* Went to college and graduated
 * Do basic calculations of tax due based on their tax bracket and sales.
 * Submit the PDF & provide documentation of sales.
 * Write a check for the calculated amount.
