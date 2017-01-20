@@ -1,8 +1,11 @@
-var User = require('../models/user');
+var User   = require('../models/user');
+var jwt    = require('jsonwebtoken');
+var secret = 'CBAB340E4E22551971';
+
 module.exports = function (router) {
     // http://localhost:3000/api/newuser
     // USER REGISTRATION ROUTE
-    router.post('/newuser', function (req, res) {
+    router.post('/newuser', function (req, res, $location) {
         var user = new User();
         user.firstName = req.body.firstName;
         user.lastName = req.body.lastName;
@@ -42,11 +45,36 @@ module.exports = function (router) {
                 if (!validPassword) {
                     res.json({ success: false, message: 'Could not authenticate password' })
                 } else {
-                    res.json({ success: true, message: 'User authenticated' });
+                    var token = jwt.sign({ username: user.username,  email: user.email,
+                                        firstName: user.firstName, lastName: user.lastName }, secret, { expiresIn: '24h'});
+                    res.json({ success: true, message: 'User authenticated', token: token });
                 }
             }
 
         });
     });
+
+    router.use(function (req, res, next) {
+       var token = req.body.token || req.body.query || req.headers['x-access-token'];
+
+       if (token) {
+           //Verify token
+           jwt.verify(token, secret, function (err, decoded) {
+              if (err) {
+                  res.json({ success: false, message: 'Token invalid'})
+              } else {
+                  req.decoded = decoded;
+                  next();
+              }
+           });
+       } else {
+           res.json({ success: false, message:'No token provided' })
+       }
+    });
+
+    router.post('/currentuser', function (req, res) {
+        res.send(req.decoded);
+    });
+
     return router
 };
