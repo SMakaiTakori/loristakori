@@ -3,6 +3,10 @@
         <h1>Sign Up</h1>
     </div>
 </div>
+
+<section class="main-signup">
+  <section id="new-user" class="column" >
+      <h2 class="center">Create an Account!</h2>
          <form class="container" ng-submit="register.regUser(regData)">
             <label>First Name</label>
             <input type="text" class="form-control input-sm" ng-model="register.regData.firstName">
@@ -13,14 +17,26 @@
             <label>Username</label>
             <input type="text" class="form-control input-sm" ng-model="register.regData.username">
             <br>
-            <label>E-mail:</label>
+            <label>E-mail</label>
             <input type="text" class="form-control input-sm" ng-model="register.regData.email">
             <br>
-            <label>Password:</label>
+            <label>Password</label>
             <input type="text" class="form-control input-sm" ng-model="register.regData.password">
             <br>
             <button class="btn btn-primary" type="submit">Register</button>
         </form>
+  </section>
+
+  <section class="column" id="social-media-signin">
+        <h3 class="center-block"></h3>
+      <ul id="group" class="container">
+          <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/images/Logos/facebook.png" alt="Facebook"/>&nbsp;Facebook</a></li>
+          <li><a href="https://twitter.com/" target="_blank"><img src="assets/images/Logos/twitter.png" alt="Twitter"/>&nbsp;Twitter</a></li>
+          <li><a href="https://plus.google.com/" target="_blank"><img src="assets/images/Logos/googleplus.png" alt="Google Plus"/>&nbsp;Google Plus</a></li>
+      </ul>
+  </section>
+</section>
+
 <br>
 <br>
 <br>
