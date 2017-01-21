@@ -34,24 +34,70 @@ div.c-wrapper {
     to   { transform: rotate(360deg)}
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.column{
+    width: 35%;
+    padding: 15px;
 }
 
-li {
-    float: right;
+#socialmediasignin{
+    float:left;
+    width: 200px;
 }
 
-li a {
-    display: block;
-    color: Black;
+#newuser{
+    float:right;
+    width:200px;
+    height:10px;
+}
+
+.clear {
+    clear:both;
+}
+
+/**!Below is the footer\**/
+
+.center{
     text-align: center;
-    padding: 2rem;
-    text-decoration: none;
 }
-.footer {
-    background-color: #f1f1f1;
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
+.wrapper {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -300px;
+}
+.footer, .push {
+    height: 150px;
+}
+
+.footer{
+       color: white;
+       background-color: deepskyblue;
+}
+.footer ul{
+    margin:0 auto;
+    display: inline-block;
+}
+.footer li{
+    float: left;
+    display:block;
+    list-style: none;
+    margin:0 auto;
+}
+.footer img{
+    margin: 15px;
+}
+.footer img:hover{
+    transform: scale(2);
+    -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 2s;
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
+
+{@media only screen and (max-width: 375px)}
+
+
