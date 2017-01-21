@@ -22,6 +22,11 @@ angular.module('appRoutes', ['ngRoute'])
         .when('/profile', {
             templateUrl: 'app/views/templates/users/profile.html'
         })
+        .when('/facebook/:token', {
+            templateUrl: 'app/views/templates/users/social/social.html',
+            controller:  'facebookCtrl',
+            controllerAs: 'facebook'
+        })
 
         .otherwise({ redirectTo: '/' });
     $locationProvider.html5Mode({
