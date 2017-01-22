@@ -1,13 +1,25 @@
-/* Carousel picture allignment */
 div.c-wrapper {
     width: 80%; /* for example */
     margin: auto;
 }
 
+.jumbotron {
+    background-color: #00bfff;
+    color:#ffffff;
+
+    }
+
+/*Carousel style below*/
+
 .carousel-inner > .item > img {
     margin: 0 auto;
 }
-/* User creation animation still needs work */
+
+.carousel-inner {
+    background-color:#7DCFDA  ;
+
+}
+
 .show-hide-message.ng-hide-remove {
     -webkit-animation: zoomIn 0.3s both ease;
     -moz-animation: zoomIn 0.3s both ease;
@@ -35,26 +47,56 @@ div.c-wrapper {
     to   { transform: rotate(360deg)}
 }
 
-.column{
-    width: 35%;
-    padding: 15px;
+/*Nav bar style below*/
+
+.navbar-custom {
+    background-color:#00bfff;
+    color:#ffffff;
+    border-radius:0;
+}
+.navbar-custom .navbar-nav > li > a {
+    color:#ffffff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+    font-family: 'Tangerine', cursive;
+
 }
 
+/*Home page style below*/
+
+h1{
+    font-family: 'Tangerine', cursive;
+}
+
+.biography{
+    font-family: 'Taviraj', serif;
+    text-align:justify;
+    text-indent: 4rem;
+}
+
+/* Sign-up page style below */
+
+.column{
+    width: 45%;
+    padding: 15px;
+}
 #socialmediasignin{
     float:left;
     width: 200px;
 }
-
 #newuser{
     float:right;
     width:200px;
     height:10px;
 }
-
 .clear {
     clear:both;
 }
-
 /**!Below is the footer\**/
 
 .center{
@@ -67,17 +109,14 @@ html, body {
 }
 .wrapper {
     min-height: 100%;
-
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
-    margin-bottom: -300px;
+    margin-bottom: -150px;                                                                                              /* Equal to height of footer */
 }
 .footer, .push {
     height: 150px;
 }
 
 .footer{
-       color: white;
+       color: #ffffff;
        background-color: #00bfff;
 }
 .footer ul{
