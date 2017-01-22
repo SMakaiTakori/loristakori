@@ -8,10 +8,10 @@ module.exports = function (app, passport) {
 
     app.use(passport.initialize());
     app.use(passport.session());
-    app.use(session({secret: 'keyboard cat', resave: false, saveUninitialized: true, cookie: {secure: false}}));
+    app.use(session({secret: 'keyboard cat', resave: false, saveUninitialized: true, cookie: { secure: false } }));
 
     passport.serializeUser(function (user, done) {
-        token = jwt.sign({username: user.username, email: user.email }, secret, {expiresIn: '24h'});
+        token = jwt.sign({ username: user.username, email: user.email}, secret, {expiresIn: '24h'});
         done(null, user.id);
     });
 
@@ -28,15 +28,14 @@ module.exports = function (app, passport) {
             profileFields: ['id', 'displayName', 'photos', 'email']
         },
         function (accessToken, refreshToken, profile, done) {
-            console.log(profile._json.email);
-            User.findOne({ email: profile._json.email }).select('firstName lastName username email password').exec(function (err, user) {
-                if (err) done(err);
+            User.findOne({ email: profile._json.email }).select('username password email').exec(function (err, user) {
+               if (err) done(err);
 
-                if (user && user != null) {
-                    done(null, user)
-                } else {
-                    done(err);
-                }
+               if (user && user != null) {
+                   done(null, user);
+               } else {
+                   done(err);
+               }
             });
             done(null, profile);
         }

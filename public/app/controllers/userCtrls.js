@@ -24,5 +24,6 @@ angular.module('userController', ['userServices'])
     })
 
 .controller('facebookCtrl', function ($routeParams) {
-    console.log($routeParams.token);
+    // Auth.facebook(token);
+    console.log('testing facebook controller');
 });
