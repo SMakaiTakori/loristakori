@@ -16,9 +16,14 @@ angular.module('userController', ['userServices'])
                     }, 1500)
                 } else {
                     //create error message
-                    app.loading = false
+                    app.loading = false;
                     app.errorMessage = data.data.message;
                 }
             })
         }
-    });
+    })
+
+.controller('facebookCtrl', function ($routeParams) {
+    // Auth.facebook(token);
+    console.log('testing facebook controller');
+});

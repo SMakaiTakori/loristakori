@@ -19,7 +19,7 @@ angular.module('mainController', ['authServices'])
                 });
             } else {
                 app.isLoggedIn = false;
-                app.userFirstName = ''
+                app.userFirstName = '';
                 app.loadMe = true;
 
             }

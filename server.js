@@ -7,6 +7,8 @@ var bodyParser  = require('body-parser');                                       
 var router      = express.Router();                                                 // Using express router for exporting modules and routing
 var appRoutes   = require('./app/routes/api')(router);                              // Custom file for user signup informatiomn
 var path        = require('path');                                                  // Using path to link certain file folders to the server file
+var passport    = require('passport');
+var social      = require('./app/passport/passport')(app, passport);
 
 ///// Set up Morgan middleware /////
 app.use(morgan('dev'));                                                             // Using morgan even logger
