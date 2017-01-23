@@ -33,6 +33,9 @@ var app = angular.module('appRoutes', ['ngRoute'])
             controllerAs:  'facebook',
             authenticated: false
         })
+        .when('/photos', {
+            templateUrl:   'app/views/templates/photos.html'
+        })
 
         .otherwise({ redirectTo: '/' });
     $locationProvider.html5Mode({
