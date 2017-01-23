@@ -1,6 +1,7 @@
 var mongoose   = require('mongoose');
 var Schema     = mongoose.Schema;
 var bcrypt     = require('bcrypt-nodejs');
+var titlize    = require('mongoose-title-case');
 
 var UserSchema = new Schema ({
     firstName: { type: String, required: 1 },
@@ -17,6 +18,11 @@ UserSchema.pre('save', function (next) {
         user.password = hash;
         next();
     });
+});
+
+UserSchema.plugin(titlize, {
+    paths: [ 'firstName', { path: 'lastName' } ], // Array of paths
+    trim: true
 });
 
 UserSchema.methods.comparePassword = function (password) {
