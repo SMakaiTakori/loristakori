@@ -4,8 +4,8 @@ div.c-wrapper {
 }
 
 .jumbotron {
-    background-color: #00bfff;
-    color:#ffffff;
+    background-color: #ffffff;
+    color:#00bfff;
 
     }
 
@@ -16,7 +16,7 @@ div.c-wrapper {
 }
 
 .carousel-inner {
-    background-color:#7DCFDA  ;
+    background-color:#0c3558 ;
 
 }
 
@@ -49,34 +49,50 @@ div.c-wrapper {
 
 /*Nav bar style below*/
 
-.navbar-custom {
-    background-color:#00bfff;
+.navbar-default {
+    background-color:#0c3558;
     color:#ffffff;
     border-radius:0;
 }
-.navbar-custom .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a {
     color:#ffffff;
+    font-family: 'Tangerine', cursive;
+    font-size: 25px ;
 }
-.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
     color: #ffffff;
     background-color:transparent;
 }
-.navbar-custom .navbar-brand {
+.navbar-default .navbar-brand {
     color:#eeeeee;
     font-family: 'Tangerine', cursive;
+    font-size: 35px;
+    /*text-shadow: 4px 4px 4px #000000;*/
 
 }
 
 /*Home page style below*/
 
-h1{
+.main-header{
+    font-family: 'Amita', cursive;
+    font-size: 30pt;
+    /*text-shadow: 4px 4px 4px #000000*/
+}
+.header-subtitle{
+    font-size: 25pt;
+}
+
+
+.bio-header{
     font-family: 'Tangerine', cursive;
+    font-size:48px ;
+    /*text-shadow: 4px 4px 4px #000000*/
 }
 
 .biography{
     font-family: 'Taviraj', serif;
     text-align:justify;
-    text-indent: 4rem;
+    text-indent: 2rem;
 }
 
 /* Sign-up page style below */
@@ -117,7 +133,7 @@ html, body {
 
 .footer{
        color: #ffffff;
-       background-color: #00bfff;
+       background-color: #0c3558;
 }
 .footer ul{
     margin:0 auto;
