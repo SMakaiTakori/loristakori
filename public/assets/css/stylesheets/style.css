@@ -52,21 +52,32 @@ div.c-wrapper {
 .navbar-default {
     background-color:#0c3558;
     color:#ffffff;
-    border-radius:0;
+
 }
+
+/*.navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {*/
+    /*color: #ffffff;*/
+    /*background-color: #0c3558;*/
+    /*border-radius:0;*/
+/*}*/
+
 .navbar-default .navbar-nav > li > a {
     color:#ffffff;
-    font-family: 'Tangerine', cursive;
-    font-size: 25px ;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px ;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #ffffff;
-    background-color:transparent;
+
+navbar-default .navbar-nav li a:hover, a:active {
+background-color: #8b0000;
+
 }
+
 .navbar-default .navbar-brand {
     color:#eeeeee;
-    font-family: 'Tangerine', cursive;
-    font-size: 35px;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Source Sans Pro', sans-serif;
+
+    font-size: 20px;
     /*text-shadow: 4px 4px 4px #000000;*/
 
 }
@@ -81,7 +92,6 @@ div.c-wrapper {
 .header-subtitle{
     font-size: 25pt;
 }
-
 
 .bio-header{
     font-family: 'Tangerine', cursive;
