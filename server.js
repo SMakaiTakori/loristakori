@@ -7,9 +7,11 @@ var bodyParser  = require('body-parser');                                       
 var router      = express.Router();                                                 // Using express router for exporting modules and routing
 var appRoutes   = require('./app/routes/api')(router);                              // Custom file for user signup informatiomn
 var path        = require('path');                                                  // Using path to link certain file folders to the server file
+var passport    = require('passport');
+var social      = require('./app/passport/passport')(app, passport);
 
-///// Set up Morgan middleware /////
-app.use(morgan('dev'));                                                             // Using morgan even logger
+///// Set up Morgan middleware event logger /////
+app.use(morgan('dev'));
 
 ///// Set up body parser middleware /////
 app.use(bodyParser.json());                                                         // For parsing application/json
@@ -36,6 +38,6 @@ app.get('*', function (req, res) {                                              
 });
 
 ///// Listening for server connection on port 3000 /////
-app.listen(port, function () {                                                      // Listening to the port so that the server wont close down after connection
+app.listen(port, function () {
     console.log('Connected to Node server on port: ' + port + '!');
 });

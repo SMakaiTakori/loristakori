@@ -12,13 +12,18 @@ angular.module('userController', ['userServices'])
                     app.loading = false;
                     app.successMessage = data.data.message + '...redirecting';
                     $timeout(function () {
-                        $location.path('/');
-                    }, 1500)
+                        $location.path('/signin');
+                    }, 2000)
                 } else {
                     //create error message
-                    app.loading = false
+                    app.loading = false;
                     app.errorMessage = data.data.message;
                 }
             })
         }
-    });
+    })
+
+.controller('facebookCtrl', function ($routeParams) {
+    // Auth.facebook(token);
+    console.log('testing facebook controller');
+});

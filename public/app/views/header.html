@@ -17,24 +17,27 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a ng-show="!main.isLoggedIn" href="/signup">Sign Up<span class="sr-only">(current)</span></a></li>
-                    <li><a ng-show="!main.isLoggedIn" href="/signin">Sign In</a></li>
+                    <li><a ng-show="!main.isLoggedIn" href="/signup">Sign-Up<span class="sr-only">(current)</span></a></li>
+                    <li><a ng-show="!main.isLoggedIn" href="/signin">Sign-In</a></li>
+                    <li><a href="/photos">Art Work</a></li>
                     <li><a ng-show="main.isLoggedIn" href="/shop">Shop</a></li>
                     <li><a ng-show="main.isLoggedIn" href="#" ng-click="main.logout()">Logout</a></li>
-                    <li class="dropdown">
+                    <li><input class="pull-right" type="email" placeholder="Sign up for mailing list"></li>&nbsp;
+                    <li><input class="btn btn-primary pull-right" type="submit"></li>
+                    <li class="dropdown" ng-show="main.isLoggedIn">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Dropdown <span class="caret"></span></a>
+                           aria-expanded="false">Shop <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Beanies</a></li>
+                            <li role="separator" class="divider">Tops</li>
                             <li><a href="#">Hoodies</a></li>
+                            <li role="separator" class="divider">Bottoms</li>
                             <li><a href="#">Sweatpants</a></li>
-                            <li role="separator" class="divider"></li>
+                            <li role="separator" class="divider">Feet</li>
                             <li><a href="#">Shoes</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Accessories</a></li>
+                            <li role="separator" class="divider">Accessories</li>
+                            <li><a href="#">Beanies</a></li>
                         </ul>
                     <li><a ng-show="main.isLoggedIn" href="/profile">Hello, <strong>{{main.userFirstName}}</strong></a></li>
-                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
