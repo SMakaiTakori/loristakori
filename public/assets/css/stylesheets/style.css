@@ -6,9 +6,9 @@ div.c-wrapper {
 
 .jumbotron {
     background-color: #ffffff;
-    color:#00bfff;
+    color: #00bfff;
 
-    }
+}
 
 /*Carousel style below*/
 
@@ -17,7 +17,7 @@ div.c-wrapper {
 }
 
 .carousel-inner {
-    background-color:#0c3558 ;
+    background-color: #0c3558;
 
 }
 
@@ -34,38 +34,53 @@ div.c-wrapper {
 }
 
 @keyframes spin {
-    from { transform: rotate(0deg) }
-    to   { transform: rotate(360deg)}
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
 }
 
 @-webkit-keyframes spin {
-    from { transform: rotate(0deg)}
-    to   { transform: rotate(360deg) }
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
 }
 
 @-moz-keyframes spin {
-    from { transform: rotate(0deg)}
-    to   { transform: rotate(360deg)}
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
 }
 
 /*Nav bar style below*/
 
 .navbar-default {
-    background-color:#0c3558;
-    color:#ffffff;
-    border-radius:0;
+    background-color: #0c3558;
+    color: #ffffff;
+    border-radius: 0;
 }
+
 .navbar-default .navbar-nav > li > a {
-    color:#ffffff;
+    color: #ffffff;
     font-family: 'Tangerine', cursive;
-    font-size: 25px ;
+    font-size: 25px;
 }
+
 .navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
     color: #ffffff;
-    background-color:transparent;
+    background-color: transparent;
 }
+
 .navbar-default .navbar-brand {
-    color:#eeeeee;
+    color: #eeeeee;
     font-family: 'Tangerine', cursive;
     font-size: 35px;
     /*text-shadow: 4px 4px 4px #000000;*/
@@ -74,49 +89,55 @@ div.c-wrapper {
 
 /*Home page style below*/
 
-.main-header{
+.main-header {
     font-family: 'Amita', cursive;
     font-size: 30pt;
     /*text-shadow: 4px 4px 4px #000000*/
 }
-.header-subtitle{
+
+.header-subtitle {
     font-size: 25pt;
 }
 
-
-.bio-header{
+.bio-header {
     font-family: 'Tangerine', cursive;
-    font-size:48px ;
+    font-weight: bold;
+    font-size: 48px;
     /*text-shadow: 4px 4px 4px #000000*/
 }
 
-.biography{
+.biography {
     font-family: 'Taviraj', serif;
-    text-align:justify;
+    font-weight: bold;
+    text-align: justify;
     text-indent: 2rem;
 }
 
 /* Sign-up page style below */
 
-.column{
+.column {
     width: 45%;
     padding: 15px;
 }
-#socialmediasignin{
-    float:left;
+
+#socialmediasignin {
+    float: left;
     width: 200px;
 }
-#newuser{
-    float:right;
-    width:200px;
-    height:10px;
+
+#newuser {
+    float: right;
+    width: 200px;
+    height: 10px;
 }
+
 .clear {
-    clear:both;
+    clear: both;
 }
+
 /**!Below is the footer\**/
 
-.center{
+.center {
     text-align: center;
 }
 
@@ -124,97 +145,143 @@ html, body {
     height: 100%;
     margin: 0;
 }
+
 .wrapper {
     min-height: 100%;
-    margin-bottom: -150px;                                                                                              /* Equal to height of footer */
+    margin-bottom: -150px; /* Equal to height of footer */
 }
+
 .footer, .push {
     height: 150px;
 }
 
-.footer{
-       color: #ffffff;
-       background-color: #0c3558;
+.footer {
+    color: #ffffff;
+    background-color: #0c3558;
 }
-.footer ul{
-    margin:0 auto;
+
+.footer ul {
+    margin: 0 auto;
     display: inline-block;
 }
-.footer li{
+
+.footer li {
     float: left;
-    display:block;
+    display: block;
     list-style: none;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.footer img{
+
+.footer img {
     margin: 15px;
 }
-.footer img:hover{
+
+.footer img:hover {
     transform: scale(2);
     -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 2s;
     transition: width 1s, height 1s, background-color 1s, transform 1s;
 }
 
 /* 3d Carousel */
-.custom-container{
+.custom-container {
     margin: 4% auto;
-    width: 210px;           /* This will edit the width of the pics */
-    height: 140px;          /* This will edit the height of the pics */
+    width: 210px; /* This will edit the width of the pics */
+    height: 140px; /* This will edit the height of the pics */
     position: relative;
     perspective: 1000px;
 }
 
-#rotation{
+#rotation {
     width: 100%;
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
     animation: rotation 20s infinite linear;
 }
-#rotation:hover{
+
+#rotation:hover {
     animation-play-state: paused;
 }
-#rotation figure{
+
+#rotation figure {
     display: block;
     position: absolute;
     width: 90%;
-    height: 30%px;
+    height: 30% px;
     left: 10px;
     top: 10px;
     background: black;
     overflow: hidden;
     border: solid 4px #0c3558;
 }
-#rotation figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
-#rotation figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
-#rotation figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
-#rotation figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
-#rotation figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
-#rotation figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
-#rotation figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
-#rotation figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
-#rotation figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
 
-img{
+#rotation figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(288px);
+}
+
+#rotation figure:nth-child(2) {
+    transform: rotateY(40deg) translateZ(288px);
+}
+
+#rotation figure:nth-child(3) {
+    transform: rotateY(80deg) translateZ(288px);
+}
+
+#rotation figure:nth-child(4) {
+    transform: rotateY(120deg) translateZ(288px);
+}
+
+#rotation figure:nth-child(5) {
+    transform: rotateY(160deg) translateZ(288px);
+}
+
+#rotation figure:nth-child(6) {
+    transform: rotateY(200deg) translateZ(288px);
+}
+
+#rotation figure:nth-child(7) {
+    transform: rotateY(240deg) translateZ(288px);
+}
+
+#rotation figure:nth-child(8) {
+    transform: rotateY(280deg) translateZ(288px);
+}
+
+#rotation figure:nth-child(9) {
+    transform: rotateY(320deg) translateZ(288px);
+}
+
+img {
     -webkit-filter: grayscale(1);
     cursor: pointer;
     transition: all .5s ease;
 }
-img:hover{
+
+img:hover {
     -webkit-filter: grayscale(0);
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
 }
 
-@keyframes rotation{
-    from{
+@keyframes rotation {
+    from {
         transform: rotateY(0deg);
     }
-    to{
+    to {
         transform: rotateY(360deg);
     }
 }
 
-
-{@media only screen and (max-width: 375px)}
+{
+@media
+only
+screen
+and
+(
+max-width
+:
+375
+px
+)
+}
 
 

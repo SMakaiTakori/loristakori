@@ -10,8 +10,8 @@ var path        = require('path');                                              
 var passport    = require('passport');
 var social      = require('./app/passport/passport')(app, passport);
 
-///// Set up Morgan middleware /////
-app.use(morgan('dev'));                                                             // Using morgan even logger
+///// Set up Morgan middleware event logger /////
+app.use(morgan('dev'));
 
 ///// Set up body parser middleware /////
 app.use(bodyParser.json());                                                         // For parsing application/json
@@ -38,6 +38,6 @@ app.get('*', function (req, res) {                                              
 });
 
 ///// Listening for server connection on port 3000 /////
-app.listen(port, function () {                                                      // Listening to the port so that the server wont close down after connection
+app.listen(port, function () {
     console.log('Connected to Node server on port: ' + port + '!');
 });
