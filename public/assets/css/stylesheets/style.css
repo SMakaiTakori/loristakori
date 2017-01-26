@@ -1,13 +1,17 @@
+@font-face {
+    font-family:'fertigo';
+    src: url("assets/fonts/Fertigo_PRO.otf");
+}
+
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+
 div.c-wrapper {
     width: 80%; /* for example */
     margin: auto;
 }
-
-.jumbotron {
-    background-color: #ffffff;
-    color:#00bfff;
-
-    }
 
 /*Carousel style below*/
 
@@ -64,7 +68,7 @@ div.c-wrapper {
 .navbar-default .navbar-nav > li > a {
     color:#ffffff;
     font-family: 'Oswald', sans-serif;
-    font-size: 15px ;
+    font-size: 12pt ;
 }
 
 navbar-default .navbar-nav li a:hover, a:active {
@@ -75,27 +79,29 @@ background-color: #8b0000;
 .navbar-default .navbar-brand {
     color:#eeeeee;
     /*font-family: 'Oswald', sans-serif;*/
-    font-family: 'Source Sans Pro', sans-serif;
-
-    font-size: 20px;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: lighter;
+    font-size: 20pt;
     /*text-shadow: 4px 4px 4px #000000;*/
-
 }
 
 /*Home page style below*/
 
 .main-header{
-    font-family: 'Amita', cursive;
+    font-family: 'Arsenal', sans-serif;
     font-size: 30pt;
     /*text-shadow: 4px 4px 4px #000000*/
 }
 .header-subtitle{
     font-size: 25pt;
+    font-family: 'Arsenal', sans-serif;
 }
 
 .bio-header{
     font-family: 'Tangerine', cursive;
-    font-size:48px ;
+    font-weight: bold;
+    font-size:48pt ;
+
     /*text-shadow: 4px 4px 4px #000000*/
 }
 
