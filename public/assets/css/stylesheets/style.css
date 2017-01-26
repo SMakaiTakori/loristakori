@@ -1,13 +1,16 @@
+@font-face {
+    font-family:'fertigo';
+    src: url("assets/fonts/Fertigo_PRO.otf");
+}
+
+body{
+    background-color: lightgoldenrodyellow;
+}
+
 
 div.c-wrapper {
     width: 80%; /* for example */
     margin: auto;
-}
-
-.jumbotron {
-    background-color: #ffffff;
-    color: #00bfff;
-
 }
 
 /*Carousel style below*/
@@ -63,46 +66,54 @@ div.c-wrapper {
 /*Nav bar style below*/
 
 .navbar-default {
-    background-color: #0c3558;
-    color: #ffffff;
-    border-radius: 0;
+    background-color:#0c3558;
+    color:#ffffff;
 }
+
+/*.navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {*/
+    /*color: #ffffff;*/
+    /*background-color: #0c3558;*/
+    /*border-radius:0;*/
+/*}*/
 
 .navbar-default .navbar-nav > li > a {
-    color: #ffffff;
-    font-family: 'Tangerine', cursive;
-    font-size: 25px;
+    color:#ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12pt ;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #ffffff;
-    background-color: transparent;
+navbar-default .navbar-nav li a:hover, a:active {
+background-color: #8b0000;
+
 }
 
 .navbar-default .navbar-brand {
-    color: #eeeeee;
-    font-family: 'Tangerine', cursive;
-    font-size: 35px;
+    color:#eeeeee;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Arsenal', sans-serif;
+    font-weight: lighter;
+    font-size: 20pt;
     /*text-shadow: 4px 4px 4px #000000;*/
-
 }
 
 /*Home page style below*/
 
-.main-header {
-    font-family: 'Amita', cursive;
+.main-header{
+    font-family: 'Arsenal', sans-serif;
     font-size: 30pt;
     /*text-shadow: 4px 4px 4px #000000*/
 }
 
 .header-subtitle {
     font-size: 25pt;
+    font-family: 'Arsenal', sans-serif;
 }
 
-.bio-header {
+
+.bio-header{
     font-family: 'Tangerine', cursive;
     font-weight: bold;
-    font-size: 48px;
+    font-size:48pt ;
     /*text-shadow: 4px 4px 4px #000000*/
 }
 
@@ -111,6 +122,7 @@ div.c-wrapper {
     font-weight: bold;
     text-align: justify;
     text-indent: 2rem;
+    font-size:12pt;
 }
 
 /* Sign-up page style below */
