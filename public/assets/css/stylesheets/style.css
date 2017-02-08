@@ -117,7 +117,7 @@ div.c-wrapper {
     text-indent: 2rem;
 }
 
-/* Sign-up page style below */
+/* Sign-up and Sign-in page style below */
 
 .main-signup-header{
     font-family: 'Arsenal', sans-serif;
@@ -137,10 +137,24 @@ form {
     margin-right: auto;
     width: 50%;
     text-align: left;
-}K
+}
 
 span{
     color: #ff0000;
+}
+
+.login-header{
+    font-family: 'Arsenal', sans-serif;
+    font-size: 3.3rem;
+}
+
+.login-text{
+    font-family: 'Arsenal', sans-serif;
+    font-size: 1.6rem;
+}
+
+.btn{
+    font-family: 'Arsenal', sans-serif;
 }
 
 /**!Below is the footer\**/
@@ -150,7 +164,7 @@ span{
 }
 
 .wrapper {
-    min-height: 100%;
+    min-height: 100px;
     margin-bottom: -150px; /* Equal to height of footer */
 }
 
@@ -213,7 +227,7 @@ span{
     height: 30%;
     left: 10px;
     top: 10px;
-    background:  black;
+    background: black;
     overflow: hidden;
     border: solid 4px #0c3558;
 }
