@@ -1,13 +1,14 @@
   <div class="container">
       <div class="page-header text-center">
-        <h1>Sign Up</h1>
+        <h1 class="main-signup-header">Create an Account</h1>
     </div>
-</div>
+  </div>
 
-<section class="main-signup">
-  <section id="new-user" class="column" >
-      <h2 class="center">Create an Account!</h2>
-         <form class="container" ng-submit="register.regUser(regData)">
+<br>
+<br>
+
+  <div class="form">
+         <form ng-submit="register.regUser(regData)">
             <label>First Name</label>
             <input type="text" class="form-control input-sm" ng-model="register.regData.firstName">
             <br>
@@ -23,14 +24,17 @@
             <label>Password</label>
             <input type="text" class="form-control input-sm" ng-model="register.regData.password">
             <br>
-            <button class="btn btn-primary" type="submit">Register</button>
+           <div class="signup-btn"><button class="btn btn-primary" type="submit">Create Account</button></div>
+             <div class="text-center"><p><small><span>*</span>All Fields Required</small></p></div>
         </form>
-  </section>
+
+  </div>
 
 <br>
 <br>
 <br>
 <br>
+
 <div class="jumbotron text-center" ng-show="register.loading">
     <span glyphicon glyphicon-repeat spinner></span>
     <p>Loading...</p>
