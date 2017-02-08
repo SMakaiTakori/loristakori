@@ -119,24 +119,28 @@ div.c-wrapper {
 
 /* Sign-up page style below */
 
-.column {
-    width: 45%;
-    padding: 15px;
+.main-signup-header{
+    font-family: 'Arsenal', sans-serif;
+    font-size: 3.3rem;
 }
 
-#socialmediasignin {
-    float: left;
-    width: 200px;
+div.form {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
 }
 
-#newuser {
-    float: right;
-    width: 200px;
-    height: 10px;
-}
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: left;
+}K
 
-.clear {
-    clear: both;
+span{
+    color: #ff0000;
 }
 
 /**!Below is the footer\**/
@@ -206,7 +210,7 @@ div.c-wrapper {
     display: block;
     position: absolute;
     width: 90%;
-    height: 30% px;
+    height: 30%;
     left: 10px;
     top: 10px;
     background:  black;
