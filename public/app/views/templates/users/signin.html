@@ -1,17 +1,13 @@
-<div class="container">
-    <div class="page-header text-center">
-        <h1>User Login</h1>
-    </div>
+<div class="page-header text-center">
+        <h1 class="login-header">User Login</h1>
 </div>
 
-
-<div class="signup_backround_color">
-    <div class="container">
-        <form class="container" ng-submit="main.doLogin(loginData)">
-            <label>Username:</label>
+    <div class="form">
+            <form ng-submit="main.doLogin(loginData)">
+            <label>Username</label>
             <input type="text" class="form-control input-sm" ng-model="main.loginData.username">
             <br>
-            <label>Password:</label>
+            <label>Password</label>
             <input type="text" class="form-control input-sm" ng-model="main.loginData.password">
             <br>
             <button class="btn btn-primary" type="submit">Sign In</button>&nbsp;
@@ -20,10 +16,12 @@
         <br>
     </div>
 </div>
+
 <br>
 <br>
 <br>
 <br>
+
 <div class="jumbotron text-center" ng-show="main.loading">
     <span glyphicon glyphicon-repeat spinner></span>
     <p>Loading...</p>
