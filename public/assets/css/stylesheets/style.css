@@ -108,26 +108,44 @@ div.c-wrapper {
     text-indent: 2rem;
 }
 
-/* Sign-up page style below */
+/* Sign-up and Sign-in page style below */
 
-.column {
-    width: 45%;
-    padding: 15px;
+.main-signup-header{
+    font-family: 'Arsenal', sans-serif;
+    font-size: 3.3rem;
 }
 
-#socialmediasignin {
-    float: left;
-    width: 200px;
+div.form {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
 }
 
-#newuser {
-    float: right;
-    width: 200px;
-    height: 10px;
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: left;
 }
 
-.clear {
-    clear: both;
+span{
+    color: #ff0000;
+}
+
+.login-header{
+    font-family: 'Arsenal', sans-serif;
+    font-size: 3.3rem;
+}
+
+.login-text{
+    font-family: 'Arsenal', sans-serif;
+    font-size: 1.6rem;
+}
+
+.btn{
+    font-family: 'Arsenal', sans-serif;
 }
 
 /**!Below is the footer\**/
@@ -137,7 +155,7 @@ div.c-wrapper {
 }
 
 .wrapper {
-    min-height: 100%;
+    min-height: 100px;
     margin-bottom: -150px; /* Equal to height of footer */
 }
 
@@ -197,10 +215,10 @@ div.c-wrapper {
     display: block;
     position: absolute;
     width: 90%;
-    height: 30% px;
+    height: 85%;
     left: 10px;
     top: 10px;
-    background:  black;
+    background: black;
     overflow: hidden;
     border: solid 4px #0c3558;
 }
