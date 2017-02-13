@@ -159,6 +159,11 @@ h4 {
   font-family: 'Arsenal', sans-serif;
 }
 
+.navbar-text > a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .center {
   text-align: center;
 }

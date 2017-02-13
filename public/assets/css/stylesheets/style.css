@@ -86,67 +86,70 @@ div.c-wrapper {
 /* Sign-up and Sign-in page style below */
 h1 {
   font-family: 'Arsenal', sans-serif;
-  font-size: 3.3rem; }
+  font-size: 3.3rem;
+}
 
 div.form {
   font-family: 'Arsenal', sans-serif;
   font-size: 1.5rem;
   display: block;
-  text-align: center; }
+  text-align: center;
+}
 
 form {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  text-align: left; }
-
-span {
-  color: #ff0000; }
+  text-align: left;
+}
 
 .login-text {
   font-family: 'Arsenal', sans-serif;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+}
 
 .btn {
-  font-family: 'Arsenal', sans-serif; }
+  font-family: 'Arsenal', sans-serif;
+}
+
+/**!Below is the contact page\**/
+
+
+
+
+
+
+
+
+
+
 
 /**!Below is the footer\**/
 h4 {
-  font-family: 'Arsenal', sans-serif; }
+  font-family: 'Arsenal', sans-serif;
+}
+
+.navbar-text p{
+    color: #ffffff;
+}
+
+.navbar-text > a {
+  color: #ffffff;
+  text-decoration: none;
+    margin:.4rem;
+}
+
+.navbar-text > a:hover {
+    transform: scale(2);
+    -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 2s;
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
 
 .center {
-  text-align: center; }
+  text-align: center;
+}
 
-.wrapper {
-  min-height: 100px;
-  margin-bottom: -150px;
-  /* Equal to height of footer */ }
-
-.footer, .push {
-  height: 150px; }
-
-.footer {
-  color: #ffffff;
-  background-color: #0c3558; }
-
-.footer ul {
-  margin: 0 auto;
-  display: inline-block; }
-
-.footer li {
-  float: left;
-  display: block;
-  list-style: none;
-  margin: 0 auto; }
-
-.footer img {
-  margin: 15px; }
-
-.footer img:hover {
-  transform: scale(1.2);
-  -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 2s;
-  transition: width 1s, height 1s, background-color 1s, transform 1s; }
 
 /* 3d Carousel */
 .custom-container {
