@@ -86,7 +86,7 @@ div.c-wrapper {
 /* Sign-up and Sign-in page style below */
 h1 {
   font-family: 'Arsenal', sans-serif;
-  font-size: 3.3rem;
+  font-size: 3rem;
 }
 
 div.form {
@@ -115,15 +115,24 @@ form {
 
 /**!Below is the contact page\**/
 
+.contact{
+  font-family: 'Arsenal', sans-serif;
 
+}
 
+.contact a {
+  margin: 1.5rem;
+}
 
+.contact p {
+  font-size: 2.4rem;
+}
 
+.contact p a {
+  color: #000000;
+  /*text-decoration: none;*/
 
-
-
-
-
+}
 
 /**!Below is the footer\**/
 h4 {
@@ -132,6 +141,7 @@ h4 {
 
 .navbar-text p{
     color: #ffffff;
+    font-family: 'Arsenal', sans-serif;
 }
 
 .navbar-text > a {
