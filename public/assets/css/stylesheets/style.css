@@ -117,21 +117,15 @@ form {
 
 .contact{
   font-family: 'Arsenal', sans-serif;
-
 }
 
 .contact a {
+  color: #0c3558 ;
   margin: 1.5rem;
 }
 
 .contact p {
   font-size: 2.4rem;
-}
-
-.contact p a {
-  color: #000000;
-  /*text-decoration: none;*/
-
 }
 
 /**!Below is the footer\**/
