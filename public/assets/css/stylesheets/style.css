@@ -1,282 +1,237 @@
-body{
-    background-color: rgba(12, 53, 88, .05);
-}
-div.c-wrapper {
-    width: 80%; /* for example */
-    margin: auto;
-}
-/*Carousel style below*/
+body {
+  background-color: rgba(12, 53, 88, 0.05); }
 
+div.c-wrapper {
+  width: 80%;
+  /* for example */
+  margin: auto; }
+
+/*Carousel style below*/
 .carousel-inner > .item > img {
-    margin: 0 auto;
-}
+  margin: 0 auto; }
+
 .carousel-inner {
-    background-color: #0c3558;
-}
+  background-color: #0c3558; }
+
 .show-hide-message.ng-hide-remove {
-    -webkit-animation: zoomIn 0.3s both ease;
-    -moz-animation: zoomIn 0.3s both ease;
-    animation: .3s both ease;
-}
+  -webkit-animation: zoomIn 0.3s both ease;
+  -moz-animation: zoomIn 0.3s both ease;
+  animation: .3s both ease; }
+
 .spinner {
-    -webkit-animation: spin 1s infinite;
-    -moz-animation: spin 1s infinite;
-    animation: sping 1s infinite;
-}
+  -webkit-animation: spin 1s infinite;
+  -moz-animation: spin 1s infinite;
+  animation: sping 1s infinite; }
 
 @keyframes spin {
-    from {
-        transform: rotate(0deg)
-    }
-    to {
-        transform: rotate(360deg)
-    }
-}
-
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 @-webkit-keyframes spin {
-    from {
-        transform: rotate(0deg)
-    }
-    to {
-        transform: rotate(360deg)
-    }
-}
-
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 @-moz-keyframes spin {
-    from {
-        transform: rotate(0deg)
-    }
-    to {
-        transform: rotate(360deg)
-    }
-}
-
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 /*Nav bar style below*/
-
 .navbar-default {
-    background-color: #0c3558;
-    color: #ffffff;
-    border-radius: 0;
-}
+  background-color: #0c3558;
+  color: #ffffff;
+  border-radius: 0; }
 
 .navbar-default .navbar-nav > li > a {
-    color: #ffffff;
-    font-family:  'Arsenal', sans-serif;
-    font-size: 1.6rem;
-
-}
+  color: #ffffff;
+  font-family: 'Arsenal', sans-serif;
+  font-size: 1.6rem; }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    background-color: #ffffff;
-    color:  #0c3558;
-}
+  background-color: #ffffff;
+  color: #0c3558; }
 
 .navbar-default .navbar-brand {
-    color: #eeeeee;
-    font-family: 'Arsenal', sans-serif;
-    font-size: 2.1rem;
-}
+  color: #eeeeee;
+  font-family: 'Arsenal', sans-serif;
+  font-size: 2.1rem; }
 
 .navbar-default .navbar-brand:focus {
-    background-color: #ffffff;
-    color: #0c3558;
-}
+  background-color: #ffffff;
+  color: #0c3558; }
 
 .navbar-default .navbar-brand:hover {
-    background-color: #ffffff;
-    color: #0c3558;
-}
+  background-color: #ffffff;
+  color: #0c3558; }
 
 /*Home page style below*/
-
 .main-header {
-    font-family: 'Tangerine', cursive;
-    font-size: 8rem;
-}
+  font-family: 'Tangerine', cursive;
+  font-size: 8rem; }
 
 .bio-header {
-    font-size: 5rem;
-    font-family: 'Tangerine', cursive;
-    font-weight: bold;
-}
+  font-size: 5rem;
+  font-family: 'Tangerine', cursive;
+  font-weight: bold; }
 
 .biography {
-    font-size: 1.44rem;
-    font-family: 'Arsenal', sans-serif;
-    font-weight: bold;
-    text-align: justify;
-    text-indent: 2rem;
-}
+  font-size: 1.44rem;
+  font-family: 'Arsenal', sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  text-indent: 2rem; }
 
 /* Sign-up and Sign-in page style below */
-
-.main-signup-header{
-    font-family: 'Arsenal', sans-serif;
-    font-size: 3.3rem;
+h1 {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 3rem;
 }
 
 div.form {
-    font-family: 'Arsenal', sans-serif;
-    font-size: 1.5rem;
-    display: block;
-    text-align: center;
+  font-family: 'Arsenal', sans-serif;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
 }
 
 form {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-align: left;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: left;
 }
 
-span{
-    color: #ff0000;
+.login-text {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 1.6rem;
 }
 
-.login-header{
-    font-family: 'Arsenal', sans-serif;
-    font-size: 3.3rem;
+.btn {
+  font-family: 'Arsenal', sans-serif;
 }
 
-.login-text{
-    font-family: 'Arsenal', sans-serif;
-    font-size: 1.6rem;
+/**!Below is the contact page\**/
+
+.contact{
+  font-family: 'Arsenal', sans-serif;
+
 }
 
-.btn{
-    font-family: 'Arsenal', sans-serif;
+.contact a {
+  margin: 1.5rem;
+}
+
+.contact p {
+  font-size: 2.4rem;
+}
+
+.contact p a {
+  color: #000000;
+  /*text-decoration: none;*/
+
 }
 
 /**!Below is the footer\**/
-
-.center {
-    text-align: center;
+h4 {
+  font-family: 'Arsenal', sans-serif;
 }
 
-.wrapper {
-    min-height: 100px;
-    margin-bottom: -150px; /* Equal to height of footer */
-}
-
-.footer, .push {
-    height: 150px;
-}
-
-.footer {
+.navbar-text p{
     color: #ffffff;
-    background-color: #0c3558;
+    font-family: 'Arsenal', sans-serif;
 }
 
-.footer ul {
-    margin: 0 auto;
-    display: inline-block;
+.navbar-text > a {
+  color: #ffffff;
+  text-decoration: none;
+    margin:.4rem;
 }
 
-.footer li {
-    float: left;
-    display: block;
-    list-style: none;
-    margin: 0 auto;
-}
-
-.footer img {
-    margin: 15px;
-}
-
-.footer img:hover {
-    transform: scale(1.2);
+.navbar-text > a:hover {
+    transform: scale(2);
     -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 2s;
     transition: width 1s, height 1s, background-color 1s, transform 1s;
 }
 
+.center {
+  text-align: center;
+}
+
+
 /* 3d Carousel */
 .custom-container {
-    margin: 4% auto;
-    width: 210px; /* This will edit the width of the pics */
-    height: 140px; /* This will edit the height of the pics */
-    position: relative;
-    perspective: 1000px;
-}
+  margin: 4% auto;
+  width: 210px;
+  /* This will edit the width of the pics */
+  height: 140px;
+  /* This will edit the height of the pics */
+  position: relative;
+  perspective: 1000px; }
 
 #rotation {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    animation: rotation 20s infinite linear;
-}
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotation 20s infinite linear; }
 
 #rotation:hover {
-    animation-play-state: paused;
-}
+  animation-play-state: paused; }
 
 #rotation figure {
-    display: block;
-    position: absolute;
-    width: 90%;
-    height: 85%;
-    left: 10px;
-    top: 10px;
-    background: black;
-    overflow: hidden;
-    border: solid 4px #0c3558;
-}
+  display: block;
+  position: absolute;
+  width: 90%;
+  height: 30%;
+  left: 10px;
+  top: 10px;
+  background: black;
+  overflow: hidden;
+  border: solid 4px #0c3558; }
 
 #rotation figure:nth-child(1) {
-    transform: rotateY(0deg) translateZ(288px);
-}
+  transform: rotateY(0deg) translateZ(288px); }
 
 #rotation figure:nth-child(2) {
-    transform: rotateY(40deg) translateZ(288px);
-}
+  transform: rotateY(40deg) translateZ(288px); }
 
 #rotation figure:nth-child(3) {
-    transform: rotateY(80deg) translateZ(288px);
-}
+  transform: rotateY(80deg) translateZ(288px); }
 
 #rotation figure:nth-child(4) {
-    transform: rotateY(120deg) translateZ(288px);
-}
+  transform: rotateY(120deg) translateZ(288px); }
 
 #rotation figure:nth-child(5) {
-    transform: rotateY(160deg) translateZ(288px);
-}
+  transform: rotateY(160deg) translateZ(288px); }
 
 #rotation figure:nth-child(6) {
-    transform: rotateY(200deg) translateZ(288px);
-}
+  transform: rotateY(200deg) translateZ(288px); }
 
 #rotation figure:nth-child(7) {
-    transform: rotateY(240deg) translateZ(288px);
-}
+  transform: rotateY(240deg) translateZ(288px); }
 
 #rotation figure:nth-child(8) {
-    transform: rotateY(280deg) translateZ(288px);
-}
+  transform: rotateY(280deg) translateZ(288px); }
 
 #rotation figure:nth-child(9) {
-    transform: rotateY(320deg) translateZ(288px);
-}
+  transform: rotateY(320deg) translateZ(288px); }
 
 img {
-    -webkit-filter: grayscale(1);
-    cursor: pointer;
-    transition: all .5s ease;
-}
+  -webkit-filter: grayscale(1);
+  cursor: pointer;
+  transition: all .5s ease; }
 
 img:hover {
-    -webkit-filter: grayscale(0);
-    transform: scale(1.2, 1.2);
-}
+  -webkit-filter: grayscale(0);
+  transform: scale(1.2, 1.2); }
 
 @keyframes rotation {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
-}
+  from {
+    transform: rotateY(0deg); }
+  to {
+    transform: rotateY(360deg); } }
 
-{ @media only screen and ( max-width: 375px ) }
+/*# sourceMappingURL=style.css.map */
