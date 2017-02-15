@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(12, 53, 88, 0.05); }
+  background-color: rgba(45, 114, 172,0.2); }
 
 div.c-wrapper {
   width: 80%;
@@ -119,9 +119,21 @@ form {
   font-family: 'Arsenal', sans-serif;
 }
 
+.btn-circle{
+  border-radius: 50%;
+  background-color: #0c3558;
+  margin: 1.6rem;
+  padding: 2.5rem;
+
+}
+
 .contact a {
-  color: #0c3558 ;
-  margin: 1.5rem;
+  color: #ffffff ;
+  text-align: center;
+}
+
+.contact label{
+  display: block;
 }
 
 .contact p {
