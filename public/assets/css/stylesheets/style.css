@@ -120,23 +120,19 @@ form {
 }
 
 .btn-circle{
-
   border-radius: 50%;
   background-color: #0c3558;
   margin: 1.6rem;
   padding: 2.5rem;
-
 }
 
 .contact a {
-  display: inline-block;
+  display: block;
   color: #ffffff ;
-  text-align: center;
 }
 
 .contact label{
-  display: inline-block;
-
+  vertical-align: bottom;
 }
 
 .contact p {
