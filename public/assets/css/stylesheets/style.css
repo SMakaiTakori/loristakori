@@ -6,41 +6,10 @@ div.c-wrapper {
   /* for example */
   margin: auto; }
 
-/*Carousel style below*/
-.carousel-inner > .item > img {
-  margin: 0 auto; }
-
-.carousel-inner {
-  background-color: #0c3558; }
-
-.show-hide-message.ng-hide-remove {
-  -webkit-animation: zoomIn 0.3s both ease;
-  -moz-animation: zoomIn 0.3s both ease;
-  animation: .3s both ease; }
-
-.spinner {
-  -webkit-animation: spin 1s infinite;
-  -moz-animation: spin 1s infinite;
-  animation: sping 1s infinite; }
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-@-webkit-keyframes spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-@-moz-keyframes spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
 /*Nav bar style below*/
+
 .navbar-default {
-  background-color: #0c3558;
+  background-color: #000000;
   color: #ffffff;
   border-radius: 0; }
 
@@ -66,7 +35,50 @@ div.c-wrapper {
   background-color: #ffffff;
   color: #0c3558; }
 
+/*Carousel style below*/
+
+.carousel-inner > .item > img {
+    margin: 0 auto; }
+
+.carousel-inner {
+    background-color:transparent; }
+
+.show-hide-message.ng-hide-remove {
+    -webkit-animation: zoomIn 0.3s both ease;
+    -moz-animation: zoomIn 0.3s both ease;
+    animation: .3s both ease; }
+
+right.carousel-control {
+    background-color: #000000;
+}
+
+a.left.carousel-control{
+    background-color:  #000000;
+}
+
+.spinner {
+    -webkit-animation: spin 1s infinite;
+    -moz-animation: spin 1s infinite;
+    animation: sping 1s infinite; }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg); }
+    to {
+        transform: rotate(360deg); } }
+@-webkit-keyframes spin {
+    from {
+        transform: rotate(0deg); }
+    to {
+        transform: rotate(360deg); } }
+@-moz-keyframes spin {
+    from {
+        transform: rotate(0deg); }
+    to {
+        transform: rotate(360deg); } }
+
 /*Home page style below*/
+
 .main-header {
   font-family: 'Tangerine', cursive;
   font-size: 8rem; }
@@ -83,10 +95,22 @@ div.c-wrapper {
   text-align: justify;
   text-indent: 2rem; }
 
+/*Art Gallery style below*/
+
+.row a img {
+    width:350px;
+    height:150px;
+}
+
+.thumbnail {
+    border-color: #000000;
+    margin-bottom:7px;}                                                                      /* adds a little bottom space under the images *
+
 /* Sign-up and Sign-in page style below */
 h1 {
   font-family: 'Arsenal', sans-serif;
   font-size: 3rem;
+  font-weight: bold;
 }
 
 div.form {
@@ -119,11 +143,17 @@ form {
   font-family: 'Arsenal', sans-serif;
 }
 
-.btn-circle{
-  border-radius: 50%;
-  background-color: #0c3558;
-  margin: 1.6rem;
-  padding: 2.5rem;
+.btn-circle {
+    border-radius: 50%;
+    background-color: #000000;
+    margin: 1.6rem;
+    padding: 2.5rem;
+}
+
+.btn-primary:hover {
+    color: #333;
+    background-color: #808080;
+    border-color: #000000;
 }
 
 .contact a {
@@ -131,9 +161,9 @@ form {
   color: #ffffff ;
 }
 
-.contact label{
-  vertical-align: bottom;
-}
+/*.contact label{*/
+  /*vertical-align: bottom;*/
+/*}*/
 
 .contact p {
   font-size: 2.4rem;
@@ -144,7 +174,7 @@ h4 {
   font-family: 'Arsenal', sans-serif;
 }
 
-.navbar-text p{
+.navbar-text p {
     color: #ffffff;
     font-family: 'Arsenal', sans-serif;
 }
@@ -152,19 +182,16 @@ h4 {
 .navbar-text > a {
   color: #ffffff;
   text-decoration: none;
-    margin:.4rem;
+  margin:.4rem;
 }
 
-.navbar-text > a:hover {
-    transform: scale(2);
-    -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 2s;
-    transition: width 1s, height 1s, background-color 1s, transform 1s;
+.navbar-text > a > i:hover {
+    color: #808080;
 }
 
 .center {
   text-align: center;
 }
-
 
 /* 3d Carousel */
 .custom-container {
@@ -195,7 +222,7 @@ h4 {
   top: 10px;
   background: black;
   overflow: hidden;
-  border: solid 4px #0c3558; }
+  border: solid 4px #000000; }
 
 #rotation figure:nth-child(1) {
   transform: rotateY(0deg) translateZ(288px); }
