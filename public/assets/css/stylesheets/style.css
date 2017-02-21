@@ -20,7 +20,7 @@ div.c-wrapper {
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   background-color: #ffffff;
-  color: #0c3558; }
+  color: #000000; }
 
 .navbar-default .navbar-brand {
   color: #eeeeee;
@@ -29,11 +29,11 @@ div.c-wrapper {
 
 .navbar-default .navbar-brand:focus {
   background-color: #ffffff;
-  color: #0c3558; }
+  color: #000000; }
 
 .navbar-default .navbar-brand:hover {
   background-color: #ffffff;
-  color: #0c3558; }
+  color: #000000; }
 
 /*Carousel style below*/
 
@@ -47,14 +47,6 @@ div.c-wrapper {
     -webkit-animation: zoomIn 0.3s both ease;
     -moz-animation: zoomIn 0.3s both ease;
     animation: .3s both ease; }
-
-right.carousel-control {
-    background-color: #000000;
-}
-
-a.left.carousel-control{
-    background-color:  #000000;
-}
 
 .spinner {
     -webkit-animation: spin 1s infinite;
@@ -97,14 +89,10 @@ a.left.carousel-control{
 
 /*Art Gallery style below*/
 
-.row a img {
-    width:350px;
-    height:150px;
-}
 
-.thumbnail {
-    border-color: #000000;
-    margin-bottom:7px;}                                                                      /* adds a little bottom space under the images *
+
+
+
 
 /* Sign-up and Sign-in page style below */
 h1 {
