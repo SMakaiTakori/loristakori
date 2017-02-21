@@ -89,16 +89,10 @@ div.c-wrapper {
 
 /*Art Gallery style below*/
 
-.row a img {
-    width:350px;
-    height:150px;
-}
 
-.modal-dialog {width:600px;}
 
-.thumbnail {
-    border-color: #000000;
-    margin-bottom:6px;}                                                                             /* adds a little bottom space under the images *
+
+
 
 /* Sign-up and Sign-in page style below */
 h1 {
