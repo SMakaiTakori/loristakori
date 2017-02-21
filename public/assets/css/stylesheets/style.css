@@ -182,3 +182,22 @@ h4 {
 .center {
   text-align: center;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.thumbnail-gallery a {
+    padding-right: 2rem;
+    margin-bottom: 2em;
+}
+.thumbnail-gallery:hover img {
+    opacity: .5;
+    transform: scale(.90);
+}
+.thumbnail-gallery img:hover {
+    opacity: 1;
+    transform: scale(1) rotate(4deg);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+}

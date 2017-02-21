@@ -2,4 +2,4 @@ angular.module('myApp', ['appRoutes', 'userController', 'userServices', 'ngAnima
 
     .config(function ($httpProvider) {
         $httpProvider.interceptors.push('AuthInterceptors')
-    })
+    });
