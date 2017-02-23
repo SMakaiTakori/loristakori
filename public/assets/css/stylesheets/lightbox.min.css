@@ -4,7 +4,7 @@
 }
 
 body:after {
-    content: url(/public/assets/images/close.png) url(/public/assets/images/loading.gif) url(/public/assets/images/prev.png) url(/public/assets/images/next.png);
+    content: url(../assets/images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
     display: none
 }
 
@@ -190,7 +190,7 @@ body.lb-disable-scrolling {
     float: right;
     width: 30px;
     height: 30px;
-    background: url(../images/close.png) top right no-repeat;
+    background: url(../assets/images/close.png) top right no-repeat;
     text-align: right;
     outline: 0;
     filter: alpha(Opacity=70);
