@@ -1,5 +1,5 @@
 body {
-  background-color: #f0ead6; }
+  background-color: #FDFEFE ; }
 
 /* ///// Nav bar style below ///// */
 
@@ -85,16 +85,16 @@ body {
 
 /*Art Gallery style below*/
 
-.row a img {
-    width:350px;
-    height:150px;
-}
+/*.row a img {*/
+    /*width:350px;*/
+    /*height:150px;*/
+/*}*/
 
-.modal-dialog {width:600px;}
+/*.modal-dialog {width:600px;}*/
 
-.thumbnail {
-    border-color: #000000;
-    margin-bottom:6px;}                                                                             /* adds a little bottom space under the images *
+/*.thumbnail {*/
+    /*border-color: #000000;*/
+    /*margin-bottom:6px;}                                                                             !* adds a little bottom space under the images **/
 
 /* Sign-up and Sign-in page style below */
 h1 {
@@ -150,10 +150,6 @@ form {
   display: block;
   color: #ffffff ;
 }
-
-/*.contact label{*/
-  /*vertical-align: bottom;*/
-/*}*/
 
 .contact p {
   font-size: 2.4rem;
