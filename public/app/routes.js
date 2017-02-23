@@ -33,8 +33,8 @@ var app = angular.module('appRoutes', ['ngRoute'])
             controllerAs:  'facebook',
             authenticated: false
         })
-        .when('/photos', {
-            templateUrl:   'app/views/templates/photos.html'
+        .when('/art_gallery', {
+            templateUrl:   'app/views/templates/art_gallery.html'
         })
         .when('/contact', {
             templateUrl:   'app/views/templates/contact.html'
