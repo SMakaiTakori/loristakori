@@ -39,6 +39,9 @@ var app = angular.module('appRoutes', ['ngRoute'])
         .when('/contact', {
             templateUrl:   'app/views/templates/contact.html'
         })
+        .when('/weather', {
+            templateUrl:   'app/views/templates/weather.html'
+        })
 
         .otherwise({ redirectTo: '/' });
     $locationProvider.html5Mode({
